@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Registration Form</title>
+    <title>User Registration Form</title>
 </head>
+
 <body>
-    <form id="registrationForm">
-      
-        <label for="birthdate">Date of Birth:</label>
-        <input type="date" id="birthdate" name="birthdate" required>
+    <form id="registration-form">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Dob</th>
+                    <th>Accepted terms?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="name" name="name"></td>
+                    <td><input type="email" id="email" name="email"></td>
+                    <td><input type="password" id="password" name="password"></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                    <td><input type="checkbox" id="accepted-terms" name="accepted-terms"></td>
+                </tr>
+            </tbody>
+        </table>
         <button type="submit">Submit</button>
     </form>
-
-    <script src="script.js"></script>
 </body>
+
 </html>
